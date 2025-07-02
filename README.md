@@ -115,20 +115,6 @@ Complete six-step campaign creation wizard with modern UI
 
 ![Wizard Interface](screenshots/wizard.png)
 
-### **Campaign Builder**
-Advanced campaign creation and editing interface
-
-![Campaign Builder](screenshots/builder.png)
-
-### **Additional Views**
-The platform includes multiple specialized views for different workflows:
-
-**Create Campaign View:**
-![Create Campaign](screenshots/create.png)
-
-**New Campaign Setup:**
-![New Campaign](screenshots/new.png)
-
 ## 🛠 Development
 
 ### **Prerequisites**
