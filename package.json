@@ -1,0 +1,29 @@
+{
+  "name": "turbomarket",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI-powered marketing email SaaS platform",
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "libs/*"
+  ],
+  "scripts": {
+    "dev": "docker compose up --build",
+    "dev:web": "cd apps/web && npm run dev",
+    "dev:worker": "cd apps/worker && npm run dev",
+    "build": "docker compose build",
+    "down": "docker compose down",
+    "clean": "docker compose down -v",
+    "logs": "docker compose logs -f",
+    "setup": "npm install && cd apps/web && npm install && cd ../worker && npm install"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  }
+}
