@@ -1,13 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
-    // Enable React 19 features
-    ppr: true,
+    // Remove ppr which is not available in Next.js 14
   },
   // Enable standalone output for Docker
   output: 'standalone',
   // Disable telemetry
-  telemetry: false,
   // TypeScript configuration
   typescript: {
     ignoreBuildErrors: false,
