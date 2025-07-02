@@ -5,21 +5,20 @@
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
     "outDir": "./dist",
-    "rootDir": "./",
+    "rootDir": "./src",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "declaration": false,
+    "declaration": true,
     "incremental": true,
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"],
-      "@lib/*": ["../../lib/*"]
+      "@/*": ["./src/*"]
     }
   },
-  "include": ["src/**/*", "../../lib/**/*"],
+  "include": ["src/**/*"],
   "exclude": ["node_modules", "dist"]
 }
