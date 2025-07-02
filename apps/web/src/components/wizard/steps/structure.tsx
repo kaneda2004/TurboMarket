@@ -1,10 +1,10 @@
 import { useState } from "react";
 // import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 // Temporary simple replacements to avoid React 18 compatibility issues
-const DragDropContext = ({ children, onDragEnd }: any) => <div>{children}</div>;
-const Droppable = ({ children, droppableId }: any) => <div>{children({}, {})}</div>;  
-const Draggable = ({ children, draggableId, index }: any) => <div>{children({}, {})}</div>;
-import { Type, Image, Button, Minus, Plus, Move, Eye } from "lucide-react";
+const DragDropContext = ({ children, onDragEnd }: { children: any; onDragEnd: any }) => <div>{children}</div>;
+const Droppable = ({ children, droppableId }: { children: (provided: any, snapshot: any) => any; droppableId: string }) => <div>{children({ droppableProps: {}, innerRef: () => {} }, {})}</div>;  
+const Draggable = ({ children, draggableId, index }: { children: (provided: any, snapshot: any) => any; draggableId: string; index: number }) => <div>{children({ innerRef: () => {}, draggableProps: {}, dragHandleProps: {} }, {})}</div>;
+import { Type, Image, MousePointer, Minus, Plus, Move, Eye } from "lucide-react";
 
 interface StructureStepProps {
   data: {
@@ -48,7 +48,7 @@ const BLOCK_TYPES = [
   {
     type: "button",
     label: "Button",
-    icon: Button,
+    icon: MousePointer,
     description: "Call to action",
     color: "purple",
   },

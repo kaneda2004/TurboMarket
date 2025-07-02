@@ -128,7 +128,7 @@ export default function WizardPage() {
       <div className="flex-1 flex flex-col">
         <div className="flex-1 overflow-auto">
           <CurrentStepComponent
-            data={wizardData[STEPS[currentStep].id as keyof WizardData]}
+            data={wizardData[STEPS[currentStep].id as keyof WizardData] as any}
             onUpdate={(data: any) => updateWizardData(STEPS[currentStep].id as keyof WizardData, data)}
             wizardData={wizardData}
           />

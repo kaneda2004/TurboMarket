@@ -1,4 +1,4 @@
-import { Rocket, Mail, Survey, Users } from "lucide-react";
+import { Rocket, Mail, MessageSquare, Users } from "lucide-react";
 
 interface PurposeStepProps {
   data: {
@@ -29,7 +29,7 @@ const EMAIL_TYPES = [
     id: "survey",
     title: "Survey Invite",
     description: "Gather feedback from users",
-    icon: Survey,
+    icon: MessageSquare,
     color: "purple",
   },
   {
