@@ -16,8 +16,8 @@ export default function HomePage() {
             TurboMarket
           </h1>
           <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            AI-powered email marketing that actually converts. Create compelling campaigns 
-            with Claude 3.7 Sonnet, get predictive insights, and scale to 500+ req/s.
+            Prototype for an AI-assisted email campaign builder with a guided workflow
+            for planning subject lines, structure, tone, calls to action, and footer content.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -25,10 +25,10 @@ export default function HomePage() {
               className="inline-flex items-center space-x-2 px-8 py-4 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 transition-colors shadow-lg"
             >
               <Rocket className="w-5 h-5" />
-              <span>Create Your First Campaign</span>
+              <span>Open Prototype</span>
             </Link>
             <button className="inline-flex items-center space-x-2 px-8 py-4 border border-gray-300 text-gray-700 rounded-xl font-semibold hover:bg-gray-50 transition-colors">
-              <span>View Live Demo</span>
+              <span>Prototype Only</span>
             </button>
           </div>
         </div>
@@ -43,8 +43,7 @@ export default function HomePage() {
               AI-Powered Content
             </h3>
             <p className="text-gray-600">
-              Claude 3.7 Sonnet generates compelling subject lines, body content, and CTAs 
-              tailored to your brand voice and audience.
+              Prototype flows for AI-assisted subject lines, body structure, and CTA planning.
             </p>
           </div>
 
@@ -56,8 +55,7 @@ export default function HomePage() {
               Predictive Analytics
             </h3>
             <p className="text-gray-600">
-              Real-time open rate predictions, click cost estimation, and competitor 
-              analysis powered by ClickHouse analytics.
+              Early analytics concepts for evaluating campaign quality and editorial decisions.
             </p>
           </div>
 
@@ -69,8 +67,7 @@ export default function HomePage() {
               Smart Segmentation
             </h3>
             <p className="text-gray-600">
-              Visual rule builder for audience targeting with real-time segment size 
-              preview and dynamic content personalization.
+              Audience and goal selection to shape campaign intent within the wizard flow.
             </p>
           </div>
         </div>
@@ -106,7 +103,7 @@ export default function HomePage() {
               href="/wizard"
               className="inline-flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-medium hover:from-blue-700 hover:to-purple-700 transition-all"
             >
-              <span>Start Building Your Campaign</span>
+              <span>Explore the Wizard</span>
               <Rocket className="w-4 h-4" />
             </Link>
           </div>
@@ -115,7 +112,7 @@ export default function HomePage() {
         {/* Tech Stack */}
         <div className="text-center">
           <h3 className="text-lg font-semibold text-gray-900 mb-4">
-            Powered by Modern Infrastructure
+            Prototype stack
           </h3>
           <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-600">
             <span className="px-3 py-1 bg-gray-100 rounded-full">Next.js 14</span>
